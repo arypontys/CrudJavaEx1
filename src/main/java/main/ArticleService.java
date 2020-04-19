@@ -22,4 +22,13 @@ public class ArticleService {
     {
         return articleList;
     }
+    public Article getArticle(String id)
+    {
+        return articleList.stream().filter(t -> t.getId().equals(id)).findFirst().get();
+    }
+
+    public void addArticle(Article article)
+    {
+        articleList.add(article);
+    }
 }
