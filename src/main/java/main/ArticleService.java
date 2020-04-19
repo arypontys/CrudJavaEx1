@@ -13,12 +13,13 @@ import java.util.List;
 @Service
 public class ArticleService {
     List<Article> articleList = new ArrayList<Article>(Arrays.asList(
-            new Article(id: "1", name: "Article 01", description: "Description 01"),
-            new Article(id: "2", name: "Article 02", description: "Description 02"),
-            new Article(id: "3", name: "Article 03", description: "Description 03")
+            new Article("1", "Article 01", "Description 01"),
+            new Article("2", "Article 02", "Description 02"),
+            new Article("3", "Article 03", "Description 03")
     ));
 
-    public List<Article> getArticleList() {
+    public List<Article> getAllArticles()
+    {
         return articleList;
     }
 }
