@@ -18,5 +18,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+    <properties>
+        <java.version>11</java.version>
+        <sonar.projectKey>papw</sonar.projectKey>
+        <sonar.organization>arypontys</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.login>b372b734a4ee72cf170d1b181db6474c5d7f1844</sonar.login>
 
+    </properties>
 </project>
